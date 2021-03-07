@@ -1,0 +1,1 @@
+"# ArmenianOcr-bot" 
