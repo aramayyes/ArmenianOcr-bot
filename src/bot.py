@@ -48,7 +48,8 @@ async def get_text_from_photo(message: types.Message):
             res_msg = ResponseMsgs.EMPTY_PHOTO
         else:
             res_msg = text
-    except Exception:
+    except Exception as e:
+        logging.error(e)
         res_msg = ResponseMsgs.INTERNAL_ERROR
     await message.answer(res_msg)
 
